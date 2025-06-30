@@ -5,31 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fredrick Mwau - RPA Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <script src="animations.js" defer></script>
+
     <header>
-        <h1>Fredrick Mwau - RPA Developer Portfolio</h1>
-        <p>Welcome to my portfolio! Below, you’ll find details about my RPA projects, skills, and accomplishments.</p>
+        <div class="container">
+            <h1>Fredrick Mwau</h1>
+            <p>Experienced RPA Developer | Software Development & Automation Expert</p>
+            <!-- Placeholder for a small animated robot -->
+            <div class="animated-character" id="header-robot">
+                <!-- SVG placeholder will be loaded by JS -->
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>Skills & Tools</h2>
-        <p>Skills and tools that I use for RPA development...</p>
+    <section id="introduction">
+        <div class="container">
+            <h2>Hello, I’m Fredrick Mwau</h2>
+            <p>An experienced RPA Developer with a strong background in software development and automation. I have 2.5 years of experience with UiPath and have developed automation solutions that reduce manual effort and improve efficiency. I also have expertise in backend development, where I built websites and Android applications using technologies like WordPress, Angular, Node.js, and Spring Framework. I’ve worked on a range of RPA projects and continue to expand my knowledge in automation tools like n8n, API integrations, and more.
+            </p>
+            <!-- Placeholder for an animated owl -->
+            <div class="animated-character" id="introduction-owl">
+                <!-- SVG placeholder will be loaded by JS -->
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Projects</h2>
-        <h3>COLL002 - Sand Castle</h3>
-        <p>Project details...</p>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>RPA Tools</h3>
+                    <ul>
+                        <li>UiPath</li>
+                        <li>n8n</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>VB.Net</li>
+                        <li>Java</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Integration & Architecture</h3>
+                    <ul>
+                        <li>REST/SOAP APIs</li>
+                        <li>JSON/XML</li>
+                        <li>System Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>Microsoft SQL Server</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li>PDDs (Process Design Documents)</li>
+                        <li>SDDs (Solution Design Documents)</li>
+                        <li>Process Flow Diagrams</li>
+                        <li>User Guides</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Automation Libraries</h3>
+                    <ul>
+                        <li>File Manipulation</li>
+                        <li>Email Automation</li>
+                        <li>API Automation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Bitbucket</li>
+                        <li>Agile</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Attention to Detail</li>
+                        <li>Analytical Thinking</li>
+                        <li>Communication</li>
+                        <li>Self-Driven</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Placeholder for an animated octopus -->
+            <div class="animated-character" id="skills-octopus">
+                <!-- SVG placeholder will be loaded by JS -->
+            </div>
+        </div>
+    </section>
 
-        <h3>RMK001 - Lenders Protection Claims</h3>
-        <p>Project details...</p>
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>COLL002 - Sand Castle</h3>
+                    <p><strong>Objective:</strong> Streamlined repossession workflow by automating emails, data extraction, case updates, and notifications.</p>
+                    <p><strong>Tools Used:</strong> UiPath, Microsoft Edge, Microsoft SQL Server, Outlook, API Integrations.</p>
+                    <p><strong>Impact:</strong></p>
+                    <ul>
+                        <li>Reduced manual errors and sped up decision-making, improving process efficiency by 75%.</li>
+                        <li>Improved compliance and visibility across the repossession workflow.</li>
+                        <li>Saved 3-5 minutes per case (1 FTE = 1,875 hours annually), with a 40% reduction in vehicle depreciation costs.</li>
+                        <li>24/7 automation supporting 55-75 repossession cases per day.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>RMK001 - Lenders Protection Claims</h3>
+                    <p><strong>Objective:</strong> Automated the documentation gathering and organization for Lenders Protection Claims.</p>
+                    <p><strong>Tools Used:</strong> UiPath, Microsoft Edge, Microsoft SQL Server, Outlook.</p>
+                    <p><strong>Impact:</strong></p>
+                    <ul>
+                        <li>Reduced manual effort by 1.5 FTEs (saving 15-20 minutes per artifact and 5 minutes for claim workflow).</li>
+                        <li>Processed 10-15 claims per day, ensuring quicker and more accurate claims filing.</li>
+                        <li>Improved overall tracking and accuracy of insurance claim submissions.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>COLL001 - Repo Referral</h3>
+                    <p><strong>Objective:</strong> Automated the identification and determination of delinquent customer accounts eligible for repossession.</p>
+                    <p><strong>Tools Used:</strong> UiPath, Microsoft Edge, Microsoft SQL Server, Outlook, API Integrations.</p>
+                    <p><strong>Impact:</strong></p>
+                    <ul>
+                        <li>Automated the review of 400 accounts per day, reducing the manual effort of 7 agents.</li>
+                        <li>Improved referral accuracy for repossession decisions, significantly reducing wait times.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Custom Automation Libraries</h3>
+                    <p><strong>Objective:</strong> Designed libraries to improve reusability and speed in various automation tasks.</p>
+                    <p><strong>Libraries:</strong></p>
+                    <ul>
+                        <li><strong>COE API Library:</strong> Handles API integrations across multiple platforms.</li>
+                        <li><strong>COE Files Library:</strong> Manages file operations like converting Excel to PDF, splitting large PDFs, and encrypting Excel files.</li>
+                        <li><strong>COE Mail Library:</strong> Automates email handling via Outlook using both SMTP and Microsoft Graph.</li>
+                        <li><strong>COE Ui Library:</strong> Built for both Windows and Windows Legacy, it handles logging into web portals for common websites used in all automation processes.</li>
+                    </ul>
+                    <p><strong>Impact:</strong> Reduced development time by 40% and improved reusability across multiple projects.</p>
+                </div>
+                <div class="project-card">
+                    <h3>FastPipe Automation</h3>
+                    <p><strong>Project Description:</strong> Streamlined the bid management process by efficiently handling bid opportunities from Pantera Tools. It scrapes bids, applies filters, and organizes them into a queue for processing. The automation downloads relevant documents, extracts and backs them up to Business Network folders, and uploads them to the FastPipe system. It ensures data integrity by validating for duplicates and provides real-time status updates. Notifications are sent to stakeholders via Outlook to maintain transparency and collaboration.</p>
+                    <p><em>Author: Fredrick Mwau | Date: 11/21/2024</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Repeat for each project -->
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements & Impact</h2>
+            <ul>
+                <li>Over 1,000 cases processed and tracked efficiently through automation.</li>
+                <li>Significant time savings in manual processes (e.g., repossession workflows, loan referrals, and claims filing).</li>
+                <li>40% improvement in efficiency through the use of custom automation libraries.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always excited to discuss new projects and opportunities. Feel free to reach out!</p>
+            <p>Email: <a href="mailto:fredrick.mwau@example.com">fredrick.mwau@example.com</a></p>
+            <!-- Potentially add a simple contact form here later -->
+        </div>
     </section>
 
     <footer>
-        <p>Contact: [Your Email]</p>
+        <div class="container">
+            <p>&copy; 2024 Fredrick Mwau. All rights reserved.</p>
+            <!-- Small animated robots doing a wave or simple task -->
+            <div class="animated-character" id="footer-robot-1">
+                <!-- SVG placeholder will be loaded by JS -->
+            </div>
+            <div class="animated-character" id="footer-robot-2">
+                <!-- SVG placeholder will be loaded by JS -->
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>

@@ -167,6 +167,58 @@ section h2 {
     font-size: 1.05rem; /* Slightly larger font */
 }
 
+/* Certifications Section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; /* Slightly smaller gap than projects */
+}
+
+.certification-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #3498db; /* Blue accent for certifications */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* For vertical alignment if needed */
+    flex-direction: column;
+    justify-content: space-between; /* Pushes link to bottom if description is short */
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.certification-card h3 {
+    color: #2980b9; /* Darker blue for title */
+    margin-top: 0;
+    font-size: 1.25rem; /* Consistent title size */
+    margin-bottom: 0.75rem;
+}
+
+.certification-card p { /* Contains the link */
+    margin-bottom: 0; /* Remove default p margin if it's just for the link */
+    margin-top: auto; /* Pushes link to the bottom */
+    padding-top: 1rem; /* Space above the link */
+}
+
+.certification-card a {
+    color: #3498db; /* Blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Allows for better styling */
+    padding: 0.5rem 0; /* Padding for the link */
+}
+
+.certification-card a:hover {
+    text-decoration: underline;
+    color: #2980b9; /* Darker blue on hover */
+}
+
+
 /* Contact Section */
 #contact a {
     color: #1abc9c; /* Teal for links */

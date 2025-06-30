@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    gsap.utils.toArray(".project-card, .skill-category").forEach(card => {
+    gsap.utils.toArray(".project-card, .skill-category, .certification-card").forEach(card => {
         gsap.from(card, {
             duration: 0.7,
             opacity: 0,

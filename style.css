@@ -1,24 +1,306 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f4f7f6; /* Light grayish blue */
+    color: #333; /* Dark gray for text */
+    line-height: 1.6;
 }
+
+.container {
+    width: 85%; /* Slightly wider for better content fit */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header Styles */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background: #2c3e50; /* Dark blue-gray */
+    color: #ecf0f1; /* Light silver */
+    padding: 3rem 0; /* More padding */
     text-align: center;
-    padding: 1em;
+    border-bottom: #1abc9c 5px solid; /* Teal accent */
+    position: relative; /* For character positioning */
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem; /* Larger */
+    font-weight: bold;
+    color: #ffffff; /* White */
+}
+
+header p {
+    font-size: 1.3rem; /* Larger */
+    margin-top: 0.5rem;
+    color: #bdc3c7; /* Lighter gray */
+}
+
+/* Section Styles */
 section {
-    margin: 20px;
+    padding: 2.5rem 0; /* Increased padding */
+    border-bottom: 1px solid #dde3e8; /* Lighter border */
+    position: relative; /* For character positioning */
 }
-h2 {
-    color: #333;
+
+section:last-of-type {
+    border-bottom: none;
 }
-footer {
-    background-color: #4CAF50;
-    color: white;
+
+section h2 {
     text-align: center;
-    padding: 1em;
+    margin-bottom: 2rem; /* More space below heading */
+    color: #2c3e50; /* Dark blue-gray */
+    font-size: 2.2rem; /* Larger */
+}
+
+/* Skills Section Specifics */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    background: #ffffff; /* White background for skill cards */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.skill-category h3 {
+    color: #1abc9c; /* Teal accent for skill titles */
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category ul li {
+    background-color: #ecf0f1; /* Light silver background for skill items */
+    color: #34495e; /* Dark blue-gray text */
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+
+/* Project Card Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive columns */
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #e0e0e0; /* Lighter border */
+    border-left: 5px solid #1abc9c; /* Teal accent on left */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* Enhanced hover shadow */
+}
+
+.project-card h3 {
+    color: #2c3e50; /* Dark blue-gray for project titles */
+    margin-top: 0;
+    font-size: 1.4rem; /* Slightly larger */
+}
+
+.project-card p, .project-card ul {
+    font-size: 0.95rem;
+    color: #555; /* Medium gray for text */
+    margin-bottom: 0.8rem; /* Spacing for paragraphs */
+}
+
+.project-card ul {
+    padding-left: 20px; /* Indent list items */
+}
+.project-card li {
+    margin-bottom: 0.4rem;
+}
+
+.project-card strong {
+    color: #34495e; /* Darker text for emphasis */
+}
+
+.project-card em { /* For author/date */
+    display: block;
+    font-size: 0.85rem;
+    color: #7f8c8d; /* Gray for less emphasis */
+    margin-top: 1rem;
+    text-align: right;
+}
+
+
+/* Achievements Section */
+#achievements ul {
+    list-style: disc;
+    padding-left: 25px;
+    max-width: 700px; /* Limit width for readability */
+    margin: 1rem auto; /* Center the list */
+}
+
+#achievements li {
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem; /* Slightly larger font */
+}
+
+/* Contact Section */
+#contact a {
+    color: #1abc9c; /* Teal for links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50; /* Dark blue-gray */
+    color: #ecf0f1; /* Light silver */
+    text-align: center;
+    padding: 2.5rem 0; /* More padding */
+    margin-top: 2.5rem; /* More space above footer */
+    position: relative; /* For character positioning */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Animated Character Styles */
+.animated-character {
+    width: 60px; /* Default size, can be overridden by ID */
+    height: 60px;
+    display: inline-block; /* Allows them to sit alongside text or be positioned */
+    /* background-color: rgba(128, 128, 128, 0.3); /* Light grey placeholder */
+    /* border-radius: 50%; */
+    vertical-align: middle;
+}
+
+/* Specific positions for characters - adjust as needed */
+#header-robot {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    width: 80px;
+    height: 80px;
+}
+
+#introduction-owl {
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    width: 70px;
+    height: 70px;
+    z-index: 10; /* Ensure it's above other content if overlapping */
+}
+
+#skills-octopus {
+    display: block; /* Center it */
+    margin: 1.5rem auto 0; /* Space above, centered */
+    width: 100px;
+    height: 100px;
+}
+
+#footer-robot-1 {
+    position: absolute;
+    bottom: 15px;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+#footer-robot-2 {
+    position: absolute;
+    bottom: 15px;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive Design */
+@media(max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    #header-robot, #introduction-owl { /* Hide or reposition on smaller screens if they clutter */
+        width: 60px; height: 60px;
+    }
+    #header-robot { top: 10px; right: 2%;}
+    #introduction-owl { bottom: 5px; left: 2%;}
+}
+
+
+@media(max-width: 768px) {
+    .container {
+        width: 95%; /* More space on smaller screens */
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+
+    .project-grid, #skills .skills-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    #header-robot, #introduction-owl, #skills-octopus, #footer-robot-1, #footer-robot-2 {
+        /* display: none; /* Option to hide characters on very small screens */
+        position: static; /* Reset positioning for simplicity or hide */
+        display: block;
+        margin: 10px auto;
+        width: 50px; height: 50px;
+    }
+}
+
+@media(max-width: 480px) {
+    header h1 { font-size: 1.8rem; }
+    header p { font-size: 1rem; }
+    section h2 { font-size: 1.6rem; }
+    .skill-category h3 { font-size: 1.1rem; }
+    .project-card h3 { font-size: 1.2rem; }
+
+    #header-robot, #introduction-owl, #skills-octopus, #footer-robot-1, #footer-robot-2 {
+        display: none; /* Hide characters on very small screens to prevent clutter */
+    }
+}
+
+/* Ensure SVGs scale nicely */
+.animated-character svg {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
